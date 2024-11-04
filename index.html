@@ -6,14 +6,17 @@
         <h1>Gratitude List</h1>
 
         <!--User enters in gratitude-->
-        <p>Gratitude:</p>
-        
+        <form action="/submit" method="post">
+            <label for="userInput">Gratitude:</label>
+            <input type="text" id="userInput" name="userInput">
+        </form>
 
         <!--Button to add written gratitude-->
         <button id="gratitude" onclick="addGratitude()">Add Gratitude</button>
 
         <!--Display gratitude with delete button-->
+        <p id="gratList"></p>
 
-        <script src="js/index.js" />
+        <script src="js/index.js" ></script>
     </body>
 </html>
