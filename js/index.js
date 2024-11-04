@@ -4,17 +4,14 @@ function addGratitude() {
     
     // Check if there is anything written in Input
     if (gratitudeText.length > 0) {
-        console.log('if statement');
         const list = document.getElementById('gratList');
 
-        // Create list item
+        // Create list item AND span to hold gratitude text
         const listItem = document.createElement('li');
-        
-        // Create span to hold gratitude text
         const textSpan = document.createElement('span');
         textSpan.textContent = gratitudeText;
         
-        // Create delete button
+        // Create delete button, display it, add functionality
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
         deleteButton.onclick = function() {
